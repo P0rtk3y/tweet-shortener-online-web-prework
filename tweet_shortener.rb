@@ -1,4 +1,5 @@
 # Write your code here.
+<<<<<<< HEAD
 
 def dictionary 
   subsituted_words = {
@@ -8,11 +9,18 @@ def dictionary
   "too" => "2",
   "for" => "4",
   "four" => "4",
+=======
+dictionary = {
+  "hello" => "hi",
+  ["to", "two", "too"] => "2",
+  ["for", "four"] => "4",
+>>>>>>> bc7372bca8aa65212d2de94715da505ceae09ae9
   "be" => "b",
   "you" => "u",
   "at" => "@",
   "and" => "&"
 }
+<<<<<<< HEAD
 end
   
 def word_substituter(tweet)
@@ -46,3 +54,12 @@ def shortened_tweet_truncator(tweet)
     else tweet
     end
 end
+=======
+
+def word_substituter(tweet_s)
+  new_tweet = []
+  tweet_s.split(" ").collect do |word|
+    if dictionary.key?(word)
+      word = dictionary.fetch(word) 
+end 
+>>>>>>> bc7372bca8aa65212d2de94715da505ceae09ae9
